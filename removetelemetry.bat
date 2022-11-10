@@ -9,3 +9,4 @@ sc delete DiagTrack
 sc delete XBBlackbox
 sc delete xbdiagservice
 sc delete wersvc
+REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Windows Error Reporting" /v Disabled /t REG_DWORD /d 1 /f
