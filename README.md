@@ -4,17 +4,10 @@ A collection of useful batch scripts created by me and community members during 
 ### CreateConsoleUser
 Create a local xbox user account that can be used offline.
 
-NOTE: `setuserdata.ps1` surely could be optimized to automatically determine uid, winuser and email from the previous step...
-
 Usage
 
 ```powershell
-.\createconsoleuser.ps1 -email "john@doe.com"
-# Note UID printed by the script
-# Lets assume: 16
-# Check U:\Users\ for the created user-profile-folder
-# Let's assume UserMgr0
-.\setuserdata.ps1 -uid 16 -winuser "UserMgr0" -email "john@doe.com" -gamertag "xXJohnXx" -firstname "John" -lastname "Doe" 
+.\createconsoleuser.ps1 -email "john@doe.com" -gamertag JohnDoe -firstname John -lastname Doe
 ```
 
 ### SystemTelnet
